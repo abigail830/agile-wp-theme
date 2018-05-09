@@ -1,0 +1,59 @@
+#home-about-us {
+    padding: 60px 0 0 0;
+    background: #F9F9F9;
+    .about-us__title {
+        text-align: center;
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .about-us__group {
+        display: flex;
+        margin: 60px auto;
+        padding-bottom: 60px;
+        cursor: default;
+    }
+    .about-us__item {
+        text-align: left;
+        flex: 1;
+        padding: 0 30px;
+        .item__icon {
+            i {
+                font-size: 100px;
+                color: #ccc;
+                transition: 0.8s all ease;
+            }
+        }
+        .item__content {
+            h3 {
+                font-size: 24px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                line-height: 1.6;
+            }
+            p {
+                color: #6d6d6d;
+                font-size: 13px;
+                line-height: 25px;
+            }
+        }
+
+        &:hover {
+            .item__icon {
+                i {
+                    color: #881c21;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        .about-us__group{
+            flex-wrap: wrap;
+        }
+        .about-us__item {
+            flex:100%;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+    }
+}

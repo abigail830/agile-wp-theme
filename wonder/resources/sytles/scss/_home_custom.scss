@@ -1,0 +1,38 @@
+#home-custom {
+    margin: 60px;
+    background-color: #ffffff;
+    .home-custom__title {
+        text-align: center;
+        h2 {
+            font-size: 30px;
+            b {
+                font-weight: inherit;
+                color: #881c21;
+            }
+        }
+    }
+
+    .home-custom__group {
+        margin-top: 40px
+    }
+
+    .home-custom__item {
+        display: block;
+        float: left;
+        width: 16.666666%;
+        text-align: center;
+        margin-top: 24px;
+        img {
+            display: inline-block;
+        }
+    }
+
+    .swiper-slide {
+        background-color: #ffffff;
+    }
+    @media only screen and (max-width: 800px) {
+        .home-custom__item {
+            width: 33.333332%;
+        }
+    }
+}
