@@ -27,6 +27,16 @@ function wonder_reports_create_post_type()
     ));
 
     add_theme_support('post-thumbnails', array('reports'));
+	
+    register_taxonomy('reports_archive', 'reports', array(
+        'label' => '分类',
+        'hierarchical' => true,
+        'query_var' => 'reports_archive',
+        'public' => true,
+        'show_ui' => true,
+        'has_archive' => true,
+    ));
+	
 }
 add_action('init', 'wonder_reports_create_post_type');
 
@@ -59,7 +69,7 @@ function wonder_reports_box()
             display: none;
         }
 
-        input[name="reports_position"], input[name="reports_link"], input[name="reports_title"] {
+        input[name="reports_position"], input[name="reports_desc"], input[name="reports_link"], input[name="reports_title"]  {
             padding: 3px 8px;
             margin-top: 8px;
             font-size: 14px;
@@ -89,6 +99,15 @@ function wonder_reports_box()
                        placeholder="报告封面图上显示的报告名称">
             </td>
         </tr>
+		<tr>
+            <td>
+                <label for="reports_desc">报告简述</label>
+                <input type="text" name="reports_desc" size="30" id="reports_desc"
+                       value="<?php echo get_post_meta(get_the_ID(), '_reports_desc', true); ?>" spellcheck="true"
+                       autocomplete="off"
+                       placeholder="报告简述">
+            </td>
+        </tr>
         <tr>
             <td>
                 <label for="reports_link">下载链接</label>
@@ -110,6 +129,7 @@ function wonder_reports_save_postdata($post_id)
     update_post_meta($post_id, '_reports_position', $_POST['reports_position']);
     update_post_meta($post_id, '_reports_title', $_POST['reports_title']);
     update_post_meta($post_id, '_reports_link', $_POST['reports_link']);
+	update_post_meta($post_id, '_reports_desc', $_POST['reports_desc']);
 }
 
 add_action('save_post_reports', 'wonder_reports_save_postdata');

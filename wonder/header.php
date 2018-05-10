@@ -17,6 +17,7 @@
     <?php } ?>
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?><?php echo the_wonder_version(); ?>"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
     <?php wp_head(); ?>
 </head>
 <body>
