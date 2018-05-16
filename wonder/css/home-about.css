@@ -1,0 +1,72 @@
+#home-about {
+  position: relative; }
+  #home-about #amap {
+    height: 400px; }
+    #home-about #amap .clearfix {
+      display: block; }
+    #home-about #amap .content-box {
+      display: inline-block;
+      vertical-align: middle; }
+    #home-about #amap .title {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: "方正兰亭黑简体","Univers","sans-serif;"; }
+    #home-about #amap .content {
+      font-size: 12px;
+      color: #666;
+      line-height: 1.6;
+      margin-top: 10px; }
+  #home-about .about__content {
+    background-color: #ffffff;
+    position: absolute;
+    height: 400px;
+    width: 43%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 8;
+    opacity: .94;
+    padding: 24px; }
+    #home-about .about__content h3 {
+      font-size: 26px;
+      margin: 20px 0;
+      margin-top: 0;
+      padding: 10px 20px;
+      border-bottom: 1px solid #eee;
+	  font-weight: bold;
+      color: #006864; }
+  #home-about .info_content {
+    padding: 0 20px; }
+    #home-about .info_content p {
+      color: #333;
+      line-height: 2em;
+      font-size: 14px; }
+    #home-about .info_contnet span {
+      color: #666;
+      margin-right: 10px; }
+    #home-about .info_contnet a {
+      color: #333;
+      text-decoration: none;
+      transition: all ease 0.3s; }
+      #home-about .info_contnet a:hover {
+        text-decoration: underline; }
+  #home-about .info_img img {
+    display: block;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    float: left; }
+  #home-about .info_img:after {
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both; }
+  @media only screen and (max-width: 800px) {
+    #home-about .about__content {
+      position: relative;
+      width: 100%;
+      height: auto; }
+      #home-about .about__content h3 {
+        margin-top: 0; } }
+

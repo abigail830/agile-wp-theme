@@ -1,0 +1,127 @@
+#archive {
+  background-color: #F9F9F9; }
+  #archive .postsby {
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    font-size: 30px;
+    color: #333; }
+  #archive .nav {
+    padding: 10px;
+    overflow: hidden;
+    background: #fff;
+    margin: 30px 10px; }
+  #archive ul.default li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding-top: 30px;
+    padding-bottom: 40px;
+    line-height: 1.1; }
+    #archive ul.default li .block-image {
+      height: 120px;
+      margin: 2px 0 0 20px;
+      width: 140px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      float: right;
+      background-color: #f0f0f0;
+      background-origin: border-box;
+      background-position: 50%;
+      background-size: cover;
+      display: block;
+      position: relative; }
+    #archive ul.default li h2 {
+      font-size: 24px;
+      line-height: 1.3;
+      margin-left: -1.2px; }
+      #archive ul.default li h2 a {
+        color: inherit;
+        text-decoration: none; }
+        #archive ul.default li h2 a:hover {
+          text-decoration: underline; }
+    #archive ul.default li .desc {
+      color: rgba(0, 0, 0, 0.66);
+      line-height: 1.6;
+      margin: 5px 0 10px -.9px; }
+    #archive ul.default li .info span {
+      margin-right: 18px;
+      color: #9b9b9b;
+      font-size: 12px;
+      font-weight: 400; }
+  #archive ul.page-team li {
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+    padding-bottom: 40px; }
+    #archive ul.page-team li.imgleft .debate-personal__info {
+      padding-left: 0px; }
+    #archive ul.page-team li.imgleft .debate-personal__more {
+      text-align: left; }
+    #archive ul.page-team li:after {
+      content: '';
+      display: block;
+      height: 0;
+      visibility: hidden;
+      clear: both; }
+    #archive ul.page-team li .debate-personal__img {
+      width: 250px;
+      height: auto;
+      background-position: center top;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    #archive ul.page-team li .debate-personal__info {
+      padding-top: 0;
+      padding-left: 40px;
+      background: #fff;
+      flex: 1; }
+      #archive ul.page-team li .debate-personal__info .debate-personal__left {
+        position: relative; }
+        #archive ul.page-team li .debate-personal__info .debate-personal__left a {
+          outline: none;
+          color: #000;
+          text-decoration: unset;
+          -webkit-tap-highlight-color: transparent; }
+          #archive ul.page-team li .debate-personal__info .debate-personal__left a h3 {
+            font-size: 26px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            line-height: 1.6; }
+          #archive ul.page-team li .debate-personal__info .debate-personal__left a:hover {
+            text-decoration: underline; }
+        #archive ul.page-team li .debate-personal__info .debate-personal__left span {
+          margin: 10px 0;
+          display: block;
+          font-size: 18px; }
+        #archive ul.page-team li .debate-personal__info .debate-personal__left p {
+          color: #6d6d6d;
+          font-size: 16px;
+          padding: 12px;
+          padding-left: 0;
+          line-height: 25px; }
+      #archive ul.page-team li .debate-personal__info .ver-line {
+        float: left;
+        margin: 0 10px;
+        width: 1px;
+        height: 80px;
+        background: red;
+        margin-top: 60px; }
+    #archive ul.page-team li .debate-personal__more {
+      margin-top: 12px;
+      text-align: right; }
+      #archive ul.page-team li .debate-personal__more a {
+        background: none;
+        color: #006864 !important;
+        border: 2px solid #006864;
+        text-decoration: none;
+        padding: 8px 24px;
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: 0.3s all ease; }
+        #archive ul.page-team li .debate-personal__more a:hover {
+          color: #ffffff !important;
+          border: 2px solid #006864;
+          background-color: #006864; }
+    #archive ul.page-team li:first-child {
+      padding-top: 30px; }
+    #archive ul.page-team li:last-child {
+      margin-bottom: 0; }
+

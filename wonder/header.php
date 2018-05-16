@@ -18,6 +18,25 @@
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?><?php echo the_wonder_version(); ?>"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/swiper.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/global.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/single.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/archive.css" type="text/css" media="all" />
+	
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/header.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/footer.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/home-banner.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/home-news.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/home-slogon.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/home-snapshot.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/home-about.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/honor-timeline.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/honor-fundation.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-news.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-publicreport.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-gongyi.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-breakdown.css" type="text/css" media="all" />
+	
     <?php wp_head(); ?>
 </head>
 <body>

@@ -1,0 +1,15 @@
+#home-slogon{
+	height: 450px;
+}
+#home-slogon .home-slogon__background{
+	background-image:url("http://wonder.saraqian.com/wp-content/uploads/2018/05/2018050914065785412274100.jpg");
+	height:100%;
+}
+#home-slogon .home-slogon__background h2 {
+	text-align: center;
+	color:#fff;
+	font-weight: bold;
+	font-size: 30px;
+	padding-top:200px;
+}
+

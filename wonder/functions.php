@@ -45,7 +45,6 @@ function remove_options() {
 }
 add_action('admin_menu', 'remove_options');
 
-
 /**
  * 格式化时间
  * @param $ptime

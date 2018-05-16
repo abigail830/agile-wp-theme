@@ -1,0 +1,55 @@
+
+#page_news,#page_case {
+  margin: 0px auto;	
+  padding-bottom: 30px;
+  background-color: #efefef;
+}  
+#page_news .news-session1 {
+	width:100%;
+	position: relative;
+    background: url("http://wonder.saraqian.com/wp-content/uploads/2018/05/2018051015383988400560200.jpg") no-repeat;
+    background-position: center;
+    height: 490px;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+#page_news .news-session1 .news-session1__frontnews{
+	padding: 40px 40px;
+    position: relative;	
+}
+#page_news .news-session1 .news-session1__frontnews .item__image{
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+	width:600px;
+    height: 280px;
+	overflow:hidden;
+	float: left;
+}
+#page_news .news-session1 .news-session1__frontnews .item__info{
+	width: 400px;
+    text-align: right;
+	float: right;
+}
+
+#page_news .news-session1 .item__info h3{
+	display: inline-block;
+    color: #9d7cb3;
+	font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+#page_news .news-session1 .item__info p{
+    font-size: 15px;
+    color: #999999;
+    padding: 10px;
+	padding-left: 20px;
+    line-height: 1.5em;
+    text-align: right;
+}
+#page_news .news-session1 .item__info span a{
+	color: #9d7cb3;
+}

@@ -1,0 +1,72 @@
+#home-snapshot {
+  margin: 60px 0;
+  background-color: #fff; 
+  padding-bottom: 20px;
+}
+  #home-snapshot a {
+    text-decoration: none; }
+  #home-snapshot .home-snapshot__title {
+    text-align: center; }
+    #home-snapshot .home-snapshot__title h2 {
+      font-size: 30px;
+		color: #006f68;
+      margin-bottom: 10px; }
+      #home-snapshot .home-snapshot__title h2 b {
+        font-weight: bold;
+        color: #006f68; }
+    #home-snapshot .home-snapshot__title a {
+      background: none;
+      color: #efefef;
+      border: 2px solid #006f68;
+      line-height: 50px;
+      text-decoration: none;
+      padding: 12px 40px;
+      background-color: #006f68;
+      transition: 0.3s all ease; }
+      #home-snapshot .home-snapshot__title a:hover {
+        color: #006f68;
+        background-color: transparent; }
+  #home-snapshot .home-snapshot__group {
+    margin: 60px -16px; }
+  #home-snapshot .home-snapshot__item {
+    padding: 0 16px; }
+    #home-snapshot .home-snapshot__item .snapshot__avatar {
+      background-size: cover;
+      background-position: top center;
+      height: 0;
+      padding-bottom: 100%;
+      opacity: .8;
+      transition: 0.6s all ease; }
+    #home-snapshot .home-snapshot__item .snapshot__content {
+      margin-top: 18px; }
+      #home-snapshot .home-snapshot__item .snapshot__content h3 {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: "方正兰亭黑简体","Univers","sans-serif;";
+        color: #006f68;
+        transition: 0.3s all ease; }
+      #home-snapshot .home-snapshot__item .snapshot__content p {
+        text-align: left;
+        margin: 16px 0;
+        font-size: 12px;
+        color: #606060; }
+        #home-snapshot .home-snapshot__item .snapshot__content p span {
+          position: relative;
+          margin: 0 8px; }
+          #home-snapshot .home-snapshot__item .snapshot__content p span:after {
+            content: ' ';
+            display: block;
+            position: absolute;
+            top: 10%;
+            bottom: 10%;
+            left: 0;
+            background-color: #fff;
+            width: 1px;
+            margin: 0 6px;
+            margin-left: 1px; }
+    #home-snapshot .home-snapshot__item:hover .snapshot__avatar {
+      opacity: 1; }
+    #home-snapshot .home-snapshot__item:hover .snapshot__content h3 {
+      color: #000; }
+

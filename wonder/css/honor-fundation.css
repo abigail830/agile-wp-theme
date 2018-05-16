@@ -1,0 +1,62 @@
+#about-fundation .items{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+#about-fundation .items .container{
+    display: inline-block;
+    padding: 0;
+}
+#about-fundation .items li{
+    position: relative;
+    width: 320px;
+    margin-left: 20px;
+    float: left;
+    color: white;
+	cursor: pointer;
+}
+
+#about-fundation .items .coverbox{
+    position: relative;
+	background-color: #fff;
+}
+
+#about-fundation .items li img{
+    height:100%;
+    background-color: #006f68;
+    opacity:1;
+}
+#about-fundation .items li .desc{
+  visibility: hidden;
+  position: absolute;
+  color: #606060;
+  font-size: 16px;
+  top:200px;
+  left:20px;
+  right:20px;
+
+}
+#about-fundation .items li:hover img {
+    opacity:0.3;
+	-webkit-transform: scale(1.07);
+    transform: scale(1.07);
+	z-index: -1;
+}
+#about-fundation .items li:hover .desc{
+	z-index: 100;
+	visibility:visible;
+}
+
+#about-fundation .items li .title{
+    position: absolute;
+    top: -80px;
+    font-size:22px ;
+	font-weight:bold;
+    color: #606060;
+    width: 100%;
+    text-align: center;
+	margin-top:40px;
+	margin-bottom:30px;
+}
+

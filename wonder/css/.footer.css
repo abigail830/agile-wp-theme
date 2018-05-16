@@ -1,0 +1,22 @@
+#footer {
+  background-color: #050505;
+  padding: 14px 32px;
+  font-size: 14px;
+  color: #8f8f8f; }
+  #footer .left {
+    float: left; }
+  #footer .right {
+    float: right; }
+  #footer a {
+    color: #bcbcbc;
+    margin: 0 4px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none; }
+  @media only screen and (max-width: 600px) {
+    #footer {
+      text-align: center; }
+      #footer .left {
+        margin-bottom: 5px; }
+      #footer .left, #footer .right {
+        float: none; } }
