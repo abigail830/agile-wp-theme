@@ -25,7 +25,7 @@
     <div class="header__wrapper page-container clearfix">
         <div class="header__logo">
             <a href="<?php echo esc_url(home_url('/')); ?>">
-                <img src="<?php bloginfo('template_url'); ?>/resources/images/logo.png" alt="<?php bloginfo('name'); ?>">
+                <img src="<?php bloginfo('template_url'); ?>/resources/images/logo_dark.png" alt="<?php bloginfo('name'); ?>">
             </a>
         </div>
         <div class="header__menus">
