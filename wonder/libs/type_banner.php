@@ -23,7 +23,8 @@ function wonder_banner_create_post_type()
         'public' => true,
         'menu_icon' => 'dashicons-align-center',
         'menu_position' => 10,
-        'supports' => array('title', 'thumbnail')
+        'supports' => array('title', 'thumbnail'),
+		'capability_type' => array('banner','banners'),
     ));
 
     add_theme_support('post-thumbnails', array('banner'));

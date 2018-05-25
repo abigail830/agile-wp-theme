@@ -1,44 +1,49 @@
 #home-about {
-  position: relative; }
-  #home-about #amap {
-    height: 400px; }
-    #home-about #amap .clearfix {
-      display: block; }
-    #home-about #amap .content-box {
-      display: inline-block;
-      vertical-align: middle; }
-    #home-about #amap .title {
-      font-size: 16px;
-      font-weight: bold;
-      font-family: "方正兰亭黑简体","Univers","sans-serif;"; }
-    #home-about #amap .content {
-      font-size: 12px;
-      color: #666;
-      line-height: 1.6;
-      margin-top: 10px; }
+  position: relative;	
+	height: 300px;
+}
+
+#home-about .map-container {
+	width: 50%;
+	position: absolute;
+	left:50px;
+	top: 0;
+    bottom: 0;
+    z-index: 8;
+
+	padding:25px;
+}
+
+#home-about .map {
+	height: 250px;
+	background-image:url("../resources/images/map_s.jpg");
+	overflow:hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+
+}
   #home-about .about__content {
-    background-color: #ffffff;
     position: absolute;
-    height: 400px;
-    width: 43%;
+    width: 45%;
     right: 0;
     top: 0;
     bottom: 0;
     z-index: 8;
-    opacity: .94;
     padding: 24px; }
     #home-about .about__content h3 {
       font-size: 26px;
       margin: 20px 0;
       margin-top: 0;
       padding: 10px 20px;
-      border-bottom: 1px solid #eee;
-	  font-weight: bold;
-      color: #006864; }
+      border-bottom: 1px solid #fff;
+	  font-weight: bold; }
   #home-about .info_content {
     padding: 0 20px; }
     #home-about .info_content p {
-      color: #333;
+      color: #fff;
       line-height: 2em;
       font-size: 14px; }
     #home-about .info_contnet span {

@@ -191,3 +191,32 @@ body {
 .title-font {
   font-family: "方正兰亭黑简体","Univers","sans-serif;"; }
 
+.green {
+	color: #006f68;
+}
+.white {
+	color: #fff;
+}
+.dark_grey {
+	color: #606060;
+}
+.green-background {
+	background-color: #006f68;
+}
+.grey-background {
+	background-color: #efefef;
+}
+.white-background {
+	background-color: #fff;
+}
+h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+

@@ -3,9 +3,9 @@
 <div id="about-fundation">
     <div>
         <div class="vedio">
-            <img src="http://wonder.saraqian.com/wp-content/uploads/2018/05/2018051410440960244927248.jpg" alt="" class="pic">
+            <img src="<?php bloginfo('template_url'); ?>/resources/images/fundationbanner.jpg" alt="" class="pic">
         </div>
-        <div class="items">
+        <div class="items center white-background">
             <ul class="container">
                 <li>
                     <div class="title">基金会介绍</div>
@@ -66,6 +66,22 @@
 		
 		
 	</div>
+</div>
+<!--关于我们-->
+<div id="home-about" class="green-background" >
+	<div class="map-container">
+		<div class="map"></div>
+	</div>
+    <div class="about__content page-container">
+        <h3 class="white">联系我们</h3>
+        <div class="info_content">
+            <p><i class="fa fa-map-marker"></i>&nbsp;<span> 地址：</span>中国广东省广州市天河区珠江新城华夏路26号雅居乐中心33楼</p>
+            <p><i class="fa fa-envelope-o"></i>&nbsp;<span> 邮编：</span>510623</p>
+            <p><i class="fa fa-phone"></i> &nbsp;<span> 电话：</span>(020) 8883 9888</p>
+            <p><i class="fa fa-fax"></i>&nbsp;<span> 传真：</span>(020) 8883 9566</p>
+        </div>
+    </div>
+    <div id="amap"></div>
 </div>
 
 <?php get_footer(); ?>

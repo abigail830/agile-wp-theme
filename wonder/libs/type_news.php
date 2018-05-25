@@ -11,7 +11,9 @@ function wonder_news_create_post_type()
         'public' => true,
         'menu_icon' => 'dashicons-welcome-widgets-menus',
         'menu_position' => 10,
-        'supports' => array('title', 'editor', 'author', 'thumbnail')
+        'supports' => array('title', 'editor', 'author', 'thumbnail'),
+        'capability_type' => array('news_paper','news_papers'),
+        'map_meta_cap' => true,
     ));
 
     add_theme_support('post-thumbnails', array('news'));
@@ -23,10 +25,17 @@ function wonder_news_create_post_type()
         'public' => true,
         'show_ui' => true,
         'has_archive' => true,
+		'capabilities' => array (
+                'manage_terms' => 'manage_categories', //by default only admin
+                'edit_terms' => 'manage_news',
+                'delete_terms' => 'manage_news',
+                'assign_terms' => 'edit_news' 
+                ),
     ));
 }
 
 add_action('init', 'wonder_news_create_post_type');
+ 
 
 /**
  * 添加模块

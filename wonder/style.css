@@ -33,8 +33,9 @@
 .news-session {
 	position: relative;
     overflow: hidden;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
 	margin: 0px auto;
+	padding-top: 60px;
 
 }
 .news-session__group{
@@ -83,7 +84,6 @@
 .item__info span a:hover{
 	font-weight: bold;
 }
-
 
 
 

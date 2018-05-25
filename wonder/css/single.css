@@ -1,11 +1,19 @@
+#single {
+	background-color: #efefef;
+}
+#single .page-container{
+	width: 90%;
+}
 #single .title-container {
-  padding-top: 42px; }
+  margin: 40px auto; }
   #single .title-container .title {
     font-size: 28px;
     color: #222;
     margin-bottom: 14px;
     font-weight: 700;
-    line-height: 1.4; }
+    line-height: 1.4;
+	padding-top: 100px;
+}
   #single .title-container .info span {
     margin-right: 18px;
     color: #9b9b9b;
@@ -24,7 +32,9 @@
   font-weight: 400;
   border: none;
   padding: 0;
-  margin-top: 24px; }
+  margin-top: 24px;
+  padding-bottom: 40px;
+}
   #single .post-content p {
     margin-bottom: 20px; }
 #single .post-content h1 {

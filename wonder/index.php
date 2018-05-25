@@ -39,7 +39,7 @@
 <!--新闻中心-->
 <div id="home-news">
     <div class="home-news-wrapper page-container">
-        <div class="home-news__title">
+        <div class="center green">
             <h2>新闻中心</h2>
         </div>
     </div>
@@ -78,7 +78,7 @@
     </div>
 </div>
 <div id="home-slogon">
-	<div class="home-slogon__background">
+	<div class="home-slogon__background white center">
 		<h2>致力于公益事业，倡导企业公民责任，推动社会和谐进步</h2>
 	</div>
 </div>
@@ -86,9 +86,8 @@
 <!--项目剪影-->
 <div id="home-snapshot">
     <div class="home-snapshot-wrapper page-container">
-        <div class="home-snapshot__title">
+        <div class="center green">
             <h2>项目剪影</h2>
-            <a href="http://wonder.saraqian.com/case/">查看更多公益项目</a>
         </div>
         <div class="home-snapshot__group">
             <div class="swiper-container">
@@ -113,8 +112,8 @@
                                     <div class="snapshot__avatar"
                                          style="background-image: url('<?php echo get_the_post_thumbnail_url($post); ?>')"></div>
                                     <div class="snapshot__content">
-                                        <h3><?php echo $post->post_title; ?></h3>
-                                        <p><?php echo get_post_meta($post->ID, '_case_desc', true); ?>
+                                        <h3 class="center green"><?php echo $post->post_title; ?></h3>
+                                        <p class="left dark_grey"><?php echo get_post_meta($post->ID, '_case_desc', true); ?>
                                         </p>
                                     </div>
                                 </div>
@@ -124,13 +123,19 @@
                 </div>
             </div>
         </div>
+		<div class="read_more">
+			<a href="http://wonder.saraqian.com/case/">查看更多公益项目</a>
+		</div>
     </div>
 </div>
 
 <!--关于我们-->
-<div id="home-about">
+<div id="home-about" class="green-background" >
+	<div class="map-container">
+		<div class="map"></div>
+	</div>
     <div class="about__content page-container">
-        <h3>联系我们</h3>
+        <h3 class="white">联系我们</h3>
         <div class="info_content">
             <p><i class="fa fa-map-marker"></i>&nbsp;<span> 地址：</span>中国广东省广州市天河区珠江新城华夏路26号雅居乐中心33楼</p>
             <p><i class="fa fa-envelope-o"></i>&nbsp;<span> 邮编：</span>510623</p>

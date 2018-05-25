@@ -1,9 +1,7 @@
 <?php get_header(); ?>
     <div id="page_news">
         <div class="news-session1">
-            <div class="news-session__title">
-                <h2>新闻头条</h2>
-            </div>
+
             <div class="news-session1__frontnews clearfix  page-container">
                 <?php
                 $posts = get_posts(array(
@@ -35,7 +33,7 @@
         </div>
 		<div class="news-session">
 			<div class="news-session__title">
-                <h2>基金会新闻</h2>
+                <h2>基金会新闻</h2>
 			</div>
 			<div class="news-session__group clearfix  page-container">
                 <?php
@@ -61,7 +59,7 @@
 								  <h3><?php echo get_the_title(); ?></h3>
 							  </a>							  
                               <p><?php echo get_post_meta($post->ID, '_news_desc', true); ?></p>
-							  <span><a href="<?php echo get_permalink($post); ?>">阅读更多 </a></span>
+							  <span><a href="<?php echo get_permalink($post); ?>">阅读更多 </a></span>
                             </div>
                     </div>
                 <?php }; ?>
@@ -69,7 +67,7 @@
 		</div>
 		<div class="news-session">
 			<div class="news-session__title">
-                <h2>媒体新闻</h2>
+                <h2>媒体新闻</h2>
 		</div>
 		<div class="news-session__group clearfix  page-container">
                 <?php
@@ -95,7 +93,7 @@
 								  <h3><?php echo get_the_title(); ?></h3>
 							  </a>							  
                               <p><?php echo get_post_meta($post->ID, '_news_desc', true); ?></p>
-							  <span><a href="<?php echo get_permalink($post); ?>">阅读更多 </a></span>
+							  <span><a href="<?php echo get_permalink($post); ?>">阅读更多 </a></span>
                             </div>
                     </div>
                 <?php }; ?>

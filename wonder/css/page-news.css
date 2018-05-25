@@ -1,5 +1,4 @@
-
-#page_news,#page_case {
+#page_news {
   margin: 0px auto;	
   padding-bottom: 30px;
   background-color: #efefef;
@@ -12,6 +11,7 @@
     height: 490px;
     overflow: hidden;
     padding-bottom: 40px;
+	padding-top:80px;
 }
 
 #page_news .news-session1 .news-session1__frontnews{

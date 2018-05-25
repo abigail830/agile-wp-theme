@@ -17,7 +17,7 @@
     <?php } ?>
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?><?php echo the_wonder_version(); ?>"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/swiper.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/global.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/single.css" type="text/css" media="all" />
@@ -36,12 +36,26 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-publicreport.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-gongyi.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-breakdown.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-voluteer.css" type="text/css" media="all" />
 	
     <?php wp_head(); ?>
 </head>
 <body>
 <div id="header">
-    <div class="header__wrapper page-container clearfix">
+    	<div id="top-header">
+			<div class="container clearfix">	
+				<div class="translate-menu">
+					<div id="wpcc_widget_inner"><!--WPCC_NC_START-->
+	<span id="wpcc_original_link" class="wpcc_current_lang" ><a class="wpcc_link" href="http://wonder.saraqian.com/" title="不转换">不转换</a></span>
+	<span id="wpcc_zh-hans_link" class="wpcc_lang" ><a class="wpcc_link" rel="nofollow" href="http://wonder.saraqian.com/?variant=zh-hans" title="简体中文" >简体中文</a></span>
+	<span id="wpcc_zh-hant_link" class="wpcc_lang" ><a class="wpcc_link" rel="nofollow" href="http://wonder.saraqian.com/?variant=zh-hant" title="繁體中文" >繁體中文</a></span>
+<!--WPCC_NC_END--></div>
+				</div>
+			</div> <!-- .container -->
+		</div> <!-- #top-header -->
+	
+	
+	<div class="header__wrapper page-container clearfix">
         <div class="header__logo">
             <a href="<?php echo esc_url(home_url('/')); ?>">
                 <img src="<?php bloginfo('template_url'); ?>/resources/images/logo_dark.png" alt="<?php bloginfo('name'); ?>">
@@ -54,7 +68,7 @@
                 </a>
             </div>
             <ul class="header-menus__ul">
-                <?php wp_nav_menu(array('echo' => true, 'container' => false, 'items_wrap' => '%3$s', 'theme_location' => 'Head_Menus', 'depth' => 2)); ?>
+                <?php wp_nav_menu(array('echo' => true, 'container' => false, 'items_wrap' => '%3$s', 'theme_location' => 'Head_Menus', 'depth' => 2)); ?>				
             </ul>
         </div>
     </div>
