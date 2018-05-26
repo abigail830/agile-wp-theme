@@ -11,7 +11,9 @@ function wonder_honors_create_post_type()
         'public' => true,
         'menu_icon' => 'dashicons-awards',
         'menu_position' => 10,
-        'supports' => array('title', 'editor', 'author', 'thumbnail')
+        'supports' => array('title', 'editor', 'author', 'thumbnail'),
+		'capability_type' => array('honor','honors'),
+        'map_meta_cap' => true,
     ));
 
     add_theme_support('post-thumbnails', array('honors'));

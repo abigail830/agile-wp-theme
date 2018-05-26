@@ -13,7 +13,9 @@ function wonder_case_create_post_type()
         'menu_position' => 17,
         'has_archive' => false,
         'hierarchical' => false,
-        'supports' => array('title', 'editor', 'author', 'thumbnail')
+        'supports' => array('title', 'editor', 'author', 'thumbnail'),
+		'capability_type' => array('kind_event','kind_events'),
+        'map_meta_cap' => true,
     ));
 
     add_theme_support('post-thumbnails', array('case'));
@@ -25,6 +27,12 @@ function wonder_case_create_post_type()
         'public' => true,
         'show_ui' => true,
         'has_archive' => true,
+		'capabilities' => array (
+                'manage_terms' => 'manage_categories', //by default only admin
+                'edit_terms' => 'manage_kind_events',
+                'delete_terms' => 'manage_kind_events',
+                'assign_terms' => 'edit_kind_events' 
+                ),
     ));
 }
 

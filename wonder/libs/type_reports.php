@@ -23,18 +23,26 @@ function wonder_reports_create_post_type()
         'public' => true,
         'menu_icon' => 'dashicons-align-center',
         'menu_position' => 10,
-        'supports' => array('title', 'thumbnail')
+        'supports' => array('title', 'thumbnail'),
+		'capability_type' => array('public_report','public_reports'),
+        'map_meta_cap' => true,
     ));
 
     add_theme_support('post-thumbnails', array('reports'));
 	
     register_taxonomy('reports_archive', 'reports', array(
-        'label' => '分类',
+        'label' => '公开报告分类',
         'hierarchical' => true,
         'query_var' => 'reports_archive',
         'public' => true,
         'show_ui' => true,
         'has_archive' => true,
+		'capabilities' => array (
+                'manage_terms' => 'manage_categories', //by default only admin
+                'edit_terms' => 'manage_reports',
+                'delete_terms' => 'manage_reports',
+                'assign_terms' => 'edit_reports' 
+                ),
     ));
 	
 }

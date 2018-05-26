@@ -43,6 +43,7 @@ foreach ($_terms as $term) :
         <?php
         endwhile;
 		echo '</div>';
+	echo '</div>';
     endif;
 endforeach;
 ?>
