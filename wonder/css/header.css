@@ -81,6 +81,7 @@
     #header .header__menus .header-menus__ul > li.current-menu-item > a, #header .header__menus .header-menus__ul > li.current_page_item > a, #header .header__menus .header-menus__ul > li.current-menu-parent > a {
       color: #006f68;
 		font-size: 20px;
+		border-bottom: 3px solid #006f68;
 }
       #header .header__menus .header-menus__ul > li.current-menu-item > a[href*="#home-"], #header .header__menus .header-menus__ul > li.current_page_item > a[href*="#home-"], #header .header__menus .header-menus__ul > li.current-menu-parent > a[href*="#home-"] {
         color: #333;

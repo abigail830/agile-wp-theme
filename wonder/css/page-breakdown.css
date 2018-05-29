@@ -23,6 +23,14 @@
       background: #fff;
       box-shadow: 0 0 0 1px rgba(200, 215, 225, 0.5), 0 1px 2px #e9eff3;
       padding: 8px; }
+#news_breakdown .home-news__group a:hover h3{
+	font-weight:bold;
+}
+#news_breakdown .home-news__group a:hover .item__image{
+	opacity:0.85;
+	-webkit-transform: scale(0.99);
+    transform: scale(0.99);
+}
     #news_breakdown .home-news__group .item__image {
       margin: -9px;
       margin-bottom: 8px;
