@@ -108,7 +108,7 @@
       text-decoration: none; }
     #header .header__menus .header-menus__ul ul > li:hover > a {
       color: #ffffff;
-      background-color: #aad2b7; }
+      background-color: #006f68; }
   @media only screen and (max-width: 940px) {
     #header .header__menus .min_menus {
       display: block; }

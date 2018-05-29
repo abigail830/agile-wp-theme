@@ -33,7 +33,9 @@
         </div>
 		<div class="news-session">
 			<div class="news-session__title">
-                <h2>基金会新闻</h2>
+                <a href="<?php echo site_url();?>/foundationnews/" title="点击阅读更多">
+					<h2>基金会新闻</h2>
+				</a>
 			</div>
 			<div class="news-session__group clearfix  page-container">
                 <?php
@@ -67,7 +69,9 @@
 		</div>
 		<div class="news-session">
 			<div class="news-session__title">
-                <h2>媒体新闻</h2>
+				<a href="<?php echo site_url();?>/medianews/" title="点击阅读更多">
+	                <h2>媒体新闻</h2>
+				</a>
 		</div>
 		<div class="news-session__group clearfix  page-container">
                 <?php

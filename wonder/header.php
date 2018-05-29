@@ -44,11 +44,7 @@
     	<div id="top-header">
 			<div class="container clearfix">	
 				<div class="translate-menu">
-					<div id="wpcc_widget_inner"><!--WPCC_NC_START-->
-	<span id="wpcc_original_link" class="wpcc_current_lang" ><a class="wpcc_link" href="http://wonder.saraqian.com/" title="不转换">不转换</a></span>
-	<span id="wpcc_zh-hans_link" class="wpcc_lang" ><a class="wpcc_link" rel="nofollow" href="http://wonder.saraqian.com/?variant=zh-hans" title="简体中文" >简体中文</a></span>
-	<span id="wpcc_zh-hant_link" class="wpcc_lang" ><a class="wpcc_link" rel="nofollow" href="http://wonder.saraqian.com/?variant=zh-hant" title="繁體中文" >繁體中文</a></span>
-<!--WPCC_NC_END--></div>
+					<?php wpcc_output_navi(); ?>
 				</div>
 			</div> <!-- .container -->
 		</div> <!-- #top-header -->

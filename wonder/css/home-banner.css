@@ -1,8 +1,18 @@
 #home-banner {
-  height: 650px; }
-  #home-banner .home-banner-wrapper, #home-banner .swiper-container {
-    height: 100%; 
+  height: 530px; }
+
+.home-banner-wrapper, .swiper-container {
+    height:100%;
 	}
+.banner__slide{
+	 max-width: 100%; height: auto; 
+}
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #fff; }
+
   #home-banner .swiper__buttons {
     position: absolute;
     left: 0;
