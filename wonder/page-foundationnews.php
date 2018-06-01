@@ -1,38 +1,42 @@
 <?php get_header(); ?>
-    <div id="news_breakdown">
-        <div class="news-detail__box page-container">
-            <div class="news-detail__title">
-                <h2>基金会新闻</h2>
-            </div>
-            <div class="home-news__group clearfix">
-                <?php
-                $posts = get_posts(array(
-                    'post_type' => 'news',
-                    'order' => 'DESC',
-					'tax_query' => array(
+<div id="home-news">
+    <div class="home-news-wrapper page-container">
+        <div class="center green">
+            <h2>基金会新闻汇总</h2>
+        </div>
+    </div>
+    <div class="home-news__ul page-container">
+        <ul>
+            <?php
+            $posts = get_posts(array(
+                'post_type' => 'news',
+                'order' => 'DESC',
+				'tax_query' => array(
 					array(
 						'taxonomy' => 'news_archive',
 						'field'    => 'slug',
 						'terms'    => 'fundation-news',
 					),
 				 ),
-                    'posts_per_page' => -1
-                ));
-                foreach ($posts as $post) { ?>
-                    <div class="home-news_item">
-                        <a href="<?php echo get_permalink($post); ?>">
-                            <div class="item__image"
-                                 style="background-image: url('<?php echo get_the_post_thumbnail_url($post); ?>')"></div>
-                            <div class="item__info">
-                                <h3><?php echo get_the_title(); ?></h3>
-                                <p>
-                                    <?php echo get_post_meta($post->ID, '_news_desc', true); ?>
-                                </p>
-                            </div>
-                        </a>
+                'posts_per_page' => -1
+            ));
+            foreach ($posts as $post) { ?>
+            <li>
+                <div class="home-news__item">
+                    <div class="item__time">
+                        <?php echo wonder_get_timeago($post->post_date); ?>
                     </div>
-                <?php }; ?>
-            </div>
-        </div>
+                    <div class="item__post_title">
+                        <h3><a href="<?php echo get_permalink($post->ID); ?>"><?php echo $post->post_title; ?></a>
+                        </h3>
+                    </div>
+                    <div class="item__desc">
+                        <p><?php echo get_post_meta($post->ID, '_news_desc', true); ?></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <?php }; ?>
     </div>
+</div>
 <?php get_footer(); ?>

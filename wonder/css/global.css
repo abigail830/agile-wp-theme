@@ -220,3 +220,24 @@ h2 {
 	text-align: left;
 }
 
+.read_more {
+	text-align: center; 
+	margin-top: 70px;
+}   
+.read_more a {
+      background: none;
+      color: #006f68;
+      border: 2px solid #006f68;
+      line-height: 50px;
+      text-decoration: none;
+      padding: 10px 50px;
+		border-radius: 30px;
+      
+      transition: 0.3s all ease; }
+.read_more a b{
+	font-weight:bold;
+}
+.read_more a:hover {
+        color: #fff;
+        background-color: #006f68; }
+
