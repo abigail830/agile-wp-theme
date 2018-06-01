@@ -40,7 +40,7 @@
 <div id="home-news">
     <div class="home-news-wrapper page-container">
         <div class="center green">
-            <h2>新闻中心</h2>
+            <h2>新闻头条</h2>
         </div>
     </div>
     <div class="home-news__ul page-container">
@@ -56,7 +56,7 @@
 						'terms'    => 'front-news',
 					),
 				 ),
-                'posts_per_page' => -1
+                'posts_per_page' => 3
             ));
             foreach ($posts as $post) { ?>
             <li>
@@ -76,6 +76,9 @@
         </ul>
         <?php }; ?>
     </div>
+	<div class="read_more">
+			<a href="<?php echo site_url();?>/news/">进入<b> 新闻中心 </b>查看更多</a>
+	</div>
 </div>
 <div id="home-slogon">
 	<div class="home-slogon__background white center">
@@ -87,7 +90,7 @@
 <div id="home-snapshot">
     <div class="home-snapshot-wrapper page-container">
         <div class="center green">
-            <h2>项目剪影</h2>
+            <h2>公益项目剪影</h2>
         </div>
         <div class="home-snapshot__group">
             <div class="swiper-container">
@@ -103,7 +106,7 @@
 						'terms'    => 'project-snapshot',
 					),
 				 ),
-                'posts_per_page' => -1
+                'posts_per_page' => 8
             ));
                     foreach ($posts as $post) { ?>
                         <div class="swiper-slide">
@@ -124,25 +127,10 @@
             </div>
         </div>
 		<div class="read_more">
-			<a href="http://wonder.saraqian.com/case/">查看更多公益项目</a>
+			<a href="<?php echo site_url();?>/case/">查看更多公益项目</a>
 		</div>
     </div>
 </div>
 
-<!--关于我们-->
-<div id="home-about" class="green-background" >
-	<div class="map-container">
-		<div class="map"></div>
-	</div>
-    <div class="about__content page-container">
-        <h3 class="white">联系我们</h3>
-        <div class="info_content">
-            <p><i class="fa fa-map-marker"></i>&nbsp;<span> 地址：</span>中国广东省广州市天河区珠江新城华夏路26号雅居乐中心33楼</p>
-            <p><i class="fa fa-envelope-o"></i>&nbsp;<span> 邮编：</span>510623</p>
-            <p><i class="fa fa-phone"></i> &nbsp;<span> 电话：</span>(020) 8883 9888</p>
-            <p><i class="fa fa-fax"></i>&nbsp;<span> 传真：</span>(020) 8883 9566</p>
-        </div>
-    </div>
-    <div id="amap"></div>
-</div>
+
 <?php get_footer(); ?>

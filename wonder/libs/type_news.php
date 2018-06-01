@@ -31,6 +31,7 @@ function wonder_news_create_post_type()
                 'delete_terms' => 'manage_news',
                 'assign_terms' => 'edit_news' 
                 ),
+		'map_meta_cap' => true,
     ));
 }
 

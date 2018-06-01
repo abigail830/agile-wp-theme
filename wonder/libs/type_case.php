@@ -33,6 +33,7 @@ function wonder_case_create_post_type()
                 'delete_terms' => 'manage_kind_events',
                 'assign_terms' => 'edit_kind_events' 
                 ),
+		'map_meta_cap' => true,
     ));
 }
 

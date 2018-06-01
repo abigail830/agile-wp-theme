@@ -25,6 +25,7 @@ function wonder_banner_create_post_type()
         'menu_position' => 10,
         'supports' => array('title', 'thumbnail'),
 		'capability_type' => array('banner','banners'),
+		'map_meta_cap' => true,
     ));
 
     add_theme_support('post-thumbnails', array('banner'));

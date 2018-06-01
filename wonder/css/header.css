@@ -1,24 +1,27 @@
 #top-header .container {
-    padding: 8px;
-	background-color: #006f68;
-	margin-bottom:3px;
+    padding: 5px;
+	background-color: #fff;
+	margin-top:3px;
 }
   
 .translate-menu {
-   width: 100%;
    text-align:center;
    float: right;
+	margin-right: 50px;
    
 }
 .translate-menu a {
 	text-decoration: none; 
-	font-size: 12px;
-	color: #fff;
-	margin-left: 20px;
-	margin-right: 20px;
+	font-size: 10px;
+	color: #006f68;
+	margin: 0 5px;
+	border: 1px solid #006f68;
+	border-radius: 10px;
+	padding: 2px 10px 2px 10px;
 }
 .translate-menu a:hover {
 	font-weight:bold;
+	border: 2px solid #006f68;
 }
  
 #wpcc_original_link {
@@ -26,9 +29,9 @@
 }
 
 #header {
-  height: 115px;
+  height: 100px;
   background-color: #fff;
-  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+  box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.08);
   position: fixed;
   width: 100%;
   top: 0;
@@ -40,14 +43,15 @@
     float: right; }
   #header .header__logo img {
     display: block;
-    margin: 8px;
-	margin-bottom: 5px;
-	height: 60px;
+    margin: 0 8px;
+	margin-top:-10px;
+	padding-bottom: 8px;
+	height: 70px;
     width: auto; }
   #header .header__menus .min_menus {
     display: none;
     text-align: right;
-    line-height: 50px; }
+    line-height: 40px; }
     #header .header__menus .min_menus a {
       text-decoration: none;
       display: inline-block; }
@@ -66,13 +70,13 @@
       font-size: 14px;
       font-weight: 700;
       padding: 0 15px;
-      height: 70px;
-      line-height: 70px;
+      height: 50px;
+      line-height: 50px;
       transition: all 0.3s ease;
       text-decoration: none; }
     #header .header__menus .header-menus__ul > li:hover > a {
       color: #006f68;
-	  font-size:20px;
+	  font-size:15px;
 	  padding: 1 5px;}
     #header .header__menus .header-menus__ul > li:hover ul {
       opacity: 0.9;

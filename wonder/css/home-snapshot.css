@@ -13,17 +13,16 @@
 }   
  #home-snapshot .read_more a {
       background: none;
-      color: #efefef;
+      color: #006f68;
       border: 2px solid #006f68;
       line-height: 50px;
       text-decoration: none;
       padding: 10px 50px;
-		border-radius: 30px;
-      background-color: #006f68;
+		border-radius: 30px;      
       transition: 0.3s all ease; }
   #home-snapshot .read_more a:hover {
-        color: #006f68;
-        background-color: transparent; }
+        color: #fff;
+        background-color: #006f68;}
   #home-snapshot .home-snapshot__group {
     margin: 60px -16px; }
   #home-snapshot .home-snapshot__item {

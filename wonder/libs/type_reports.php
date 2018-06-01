@@ -43,6 +43,7 @@ function wonder_reports_create_post_type()
                 'delete_terms' => 'manage_reports',
                 'assign_terms' => 'edit_reports' 
                 ),
+		'map_meta_cap' => true,
     ));
 	
 }
