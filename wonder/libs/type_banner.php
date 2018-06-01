@@ -15,7 +15,7 @@ function wonder_banner_create_post_type()
             'search_items' => '搜索轮播',
             'not_found' => '还没有发布过轮播,点击添加轮播,添加一个新轮播',
             'not_found_in_trash' => '没有被删除的轮播内容',
-            'featured_image' => '轮播图设置',
+            'featured_image' => '轮播图设置(建议：尺寸1200*600px，分辨率144，图片大小200k内)',
             'set_featured_image' => '设置轮播图片',
             'remove_featured_image' => '移除轮播图片',
             'use_featured_image' => '选择一张图片作为轮播图'
