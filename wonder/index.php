@@ -127,7 +127,7 @@
             </div>
         </div>
 		<div class="read_more">
-			<a href="<?php echo site_url();?>/case/">查看更多公益项目</a>
+			<a href="<?php echo site_url();?>/case/">进入<b> 公益项目 </b>查看更多</a>
 		</div>
     </div>
 </div>

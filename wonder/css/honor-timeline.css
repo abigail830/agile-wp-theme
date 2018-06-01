@@ -1,4 +1,24 @@
 /*=======================
+	Description CSS
+=========================*/
+.description {
+    width: 100%;
+    padding: 100px 0;
+}
+.description .title{
+	text-align: center;
+	color: #006f68;
+	font-weight: bold;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+.introduce {
+	text-align: left;
+	color: #8c8c8c;
+	padding: 0 120px;
+	line-height: 180%;
+}
+/*=======================
 	Timeline CSS
 =========================*/
 #my-timeline{

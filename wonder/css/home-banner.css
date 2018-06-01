@@ -1,5 +1,7 @@
 #home-banner {
-  height: 600px; }
+  height: 600px; 
+  margin-top:90px;
+}
 
 .home-banner-wrapper, .swiper-container {
     height:100%;
