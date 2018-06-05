@@ -1,12 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml/DTD/xhtml1-transitional.dtd">
-<!--[if lt IE 7 ]>
-<html xmlns="http://www.w3.org/1999/xhtml" class="ie ie6"> <![endif]-->
-<!--[if IE 7 ]>
-<html xmlns="http://www.w3.org/1999/xhtml" class="ie ie7"> <![endif]-->
-<!--[if IE 8 ]>
-<html xmlns="http://www.w3.org/1999/xhtml" class="ie ie8"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]>
-<html xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html <?php language_attributes(); ?>>
+<!--<![endif]-->
 
 <html>
 <head>
@@ -19,7 +20,7 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="format-detection" content="email=no"/>
     <meta name="renderer" content="webkit">
-    <title><?php bloginfo('name'); ?></title>
+	<title><?php is_front_page() ? '': wp_title('-', true, 'right'); ?><?php bloginfo('name'); ?> </title>
 
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?><?php echo the_wonder_version(); ?>"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
