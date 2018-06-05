@@ -9,7 +9,7 @@ foreach ($_terms as $term) :
 	$paged = isset( $_GET[$term_slug] ) ? (int) $_GET[$term_slug] : 1;
 	$_posts= new WP_Query( array(
                 'post_type'         => 'case',
-                'posts_per_page'    => 3, //important for a PHP memory limit warning
+                'posts_per_page'    => 1, //important for a PHP memory limit warning
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'case_archive',
@@ -24,6 +24,11 @@ foreach ($_terms as $term) :
 		<div class="news-session">
 		<div class="news-session__title">
 			<h2><?php echo $term->name ?></h2>
+		</div>
+		<div class="new-session__description">
+			<p>
+				<?php echo term_description($term->term_id, 'case_archive') ?>
+			</p>	
 		</div>
 		<div class="news-session__group clearfix">
 			<?php while($_posts->have_posts())  : $_posts->the_post(); ?> 

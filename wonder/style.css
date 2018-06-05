@@ -27,7 +27,8 @@
 
 .news-session__title {
     text-align: center;
-    padding-top: 50px; }
+    padding-top: 50px;
+}
 .news-session__title  a{
     text-decoration: none;
 }
@@ -38,8 +39,21 @@
 .news-session__title h2 {
       font-size: 30px;
 	  color:#006f68;
-	  font-weight: bold;}
+	  font-weight: bold;	
+	
+}
 
+.new-session__description {
+	width: 80%;
+	margin:20px auto;
+	color:#fff;
+	background-color:rgba(0, 111, 104, .5);
+	font-size:13px;
+	text-indent:30px;	
+	line-height: 170%;
+	padding:50px 7%;
+	margin-bottom:0px;
+}
 .news-session {
 	position: relative;
     overflow: hidden;
@@ -56,6 +70,9 @@
 	padding: 15px;
 	padding-left: 50px;
 	padding-bottom: 60px;
+	margin-top:0px;
+	border: 2px solid rgba(0, 111, 104, .5);
+
 }
 .news-session__item {
 	float: left;
