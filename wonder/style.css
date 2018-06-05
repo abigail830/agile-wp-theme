@@ -28,6 +28,7 @@
 .news-session__title {
     text-align: center;
     padding-top: 50px;
+	margin-bottom: 40px;
 }
 .news-session__title  a{
     text-decoration: none;
@@ -70,8 +71,17 @@
 	padding: 20px;
 	padding-left: 50px;
 	padding-bottom: 40px;
-	margin-top:0px;
 
+}
+#page_case .news-session__group{
+    position: relative;	
+	background-color: #fff;
+	margin: 20px auto;
+	width:80%;
+	padding: 20px;
+	padding-left: 50px;
+	padding-bottom: 40px;
+	margin-top:0px;
 }
 .news-session__item {
 	float: left;
