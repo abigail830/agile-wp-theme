@@ -78,28 +78,3 @@ $(document).ready(function () {
 
 
 
-$(document).ready(function(){
-    window.init = function () {
-        var amap = new AMap.Map('amap', {
-            resizeEnable: true,
-            zoom: 15,
-            center: [23.123919, 113.324250]
-        });
-        var marker = new AMap.Marker({
-            position: [23.124433, 113.321857]
-        });
-        marker.setMap(amap);
-        amap.setCenter(marker.getPosition())
-        marker.on('click', function (e) {
-            infowindow.open(amap, e.target.getPosition());
-        });
-        var logo = "";
-        var infowindow = new AMap.InfoWindow({
-            content: '<div class="clearfix"><div class="content-box"><h1 class="title">雅居乐基金会</h1></div><div class="content">广州市天河区珠江新城华夏路26号雅居乐中心33楼</div></div>',
-            offset: new AMap.Pixel(0, -30),
-            size: new AMap.Size(300, 0)
-        });
-        infowindow.open(amap, marker.getPosition());
-        amap.panBy(-330,50);
-    }
-})
