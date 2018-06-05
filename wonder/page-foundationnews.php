@@ -6,9 +6,9 @@
         </div>
     </div>
     <div class="home-news__ul page-container">
-        <ul>
             <?php
-            $posts = get_posts(array(
+			$paged = isset( $_GET[$term->slug] ) ? (int) $_GET[$term->slug] : 1;
+            $posts = new WP_Query( array(
                 'post_type' => 'news',
                 'order' => 'DESC',
 				'tax_query' => array(
@@ -18,9 +18,12 @@
 						'terms'    => 'fundation-news',
 					),
 				 ),
-                'posts_per_page' => -1
+                'posts_per_page' => 10,
+				'paged' => $paged,
             ));
-            foreach ($posts as $post) { ?>
+		if( $posts->have_posts()): ?>
+		    <ul>
+            <?php while($posts->have_posts())  : $posts->the_post(); ?>
             <li>
                 <div class="home-news__item">
                     <div class="item__time">
@@ -35,8 +38,26 @@
                     </div>
                 </div>
             </li>
-        </ul>
-        <?php }; ?>
+        <?php endwhile;?>
+		</ul>
+			<div class="news-session__paging">
+	<?php
+    $total_pages = $posts->max_num_pages;
+
+    if ($total_pages > 1){
+
+        echo paginate_links(array(
+            'format'  => "?$term_slug=%#%",
+            'current' => $paged,
+            'total' => $total_pages,
+            'prev_text'    => __('« prev'),
+            'next_text'    => __('next »'),
+        ));
+    }
+   endif; ?>
+<?php wp_reset_postdata();?>
+		</div>
+
     </div>
 </div>
 <?php get_footer(); ?>
