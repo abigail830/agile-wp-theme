@@ -19,12 +19,8 @@
     <meta name="format-detection" content="telephone=no"/>
     <meta name="format-detection" content="email=no"/>
     <meta name="renderer" content="webkit">
-    <?php if (is_home()) { ?>
-        <title><?php bloginfo('name'); ?></title>
-    <?php } else { ?>
-        <meta name="title" content="<?php wp_title('|', true, 'right'); ?>">
-    <?php } ?>
-    <meta name="description" content="<?php bloginfo('description'); ?>"/>
+    <title><?php bloginfo('name'); ?></title>
+
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?><?php echo the_wonder_version(); ?>"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/swiper.css" type="text/css" media="all" />
