@@ -25,6 +25,7 @@ $(document).ready(function () {
 
 // home-menus
 $(document).ready(function () {
+	
     if ($('.home-news__nav').length === 1) {
         var HomeNewsSwiper = new Swiper('#home-news .swiper-container', {
             autoplay: false,

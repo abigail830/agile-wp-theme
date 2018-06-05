@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7 ]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie ie8"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]>
+<html xmlns="http://www.w3.org/1999/xhtml"> <![endif]-->
+
 <html>
 <head>
     <meta charset="utf-8">

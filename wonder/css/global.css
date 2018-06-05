@@ -136,9 +136,7 @@ sup {
 sub {
   bottom: -0.25em; }
 
-/* standardize any monospaced elements */
-pre, code, kbd, samp {
-  font-family: "方正兰亭黑简体",'Univers', monospace, sans-serif; }
+
 
 /* hand cursor on clickable elements */
 .clickable,
@@ -186,10 +184,11 @@ input[type=button] {
 body {
   margin-top: 65px;
   background-color: #ffffff;
-  font-family: "方正兰亭黑简体","Univers","Open Sans", "Helvetica Neue", Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; }
+  font-family: "Microsoft YaHei","微软雅黑","黑体","Univers","sans-serif;";
+}
 
 .title-font {
-  font-family: "方正兰亭黑简体","Univers","sans-serif;"; }
+  font-family: "Microsoft YaHei","微软雅黑","黑体","Univers","sans-serif;"; }
 
 .green {
 	color: #006f68;
@@ -240,4 +239,7 @@ h2 {
 .read_more a:hover {
         color: #fff;
         background-color: #006f68; }
+p {
+	font-family: "Microsoft YaHei","微软雅黑","黑体","Univers","sans-serif;";
+}
 

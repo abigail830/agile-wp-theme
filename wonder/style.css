@@ -47,7 +47,7 @@
 	width: 80%;
 	margin:20px auto;
 	color:#fff;
-	background-color:rgba(0, 111, 104, .5);
+	background-color:rgba(0, 111, 104, .6);
 	font-size:13px;
 	text-indent:30px;	
 	line-height: 170%;
@@ -67,11 +67,10 @@
 	background-color: #fff;
 	margin: 20px auto;
 	width:80%;
-	padding: 15px;
+	padding: 20px;
 	padding-left: 50px;
-	padding-bottom: 60px;
+	padding-bottom: 40px;
 	margin-top:0px;
-	border: 2px solid rgba(0, 111, 104, .5);
 
 }
 .news-session__item {
@@ -88,7 +87,7 @@
 }
 .news-session .item__info {
 	display:inline-block;;
-	width: 50%;
+	width: 53%;
     text-align: right;
 	padding-left: 10px;
 }
@@ -105,7 +104,7 @@
     padding: 10px;
 	padding-left: 20px;
     line-height: 1.5em;
-    text-align: right;
+    text-align: left;
 	padding-bottom: 20px;
 }
 .item__info span a{

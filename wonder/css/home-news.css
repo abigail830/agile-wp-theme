@@ -1,5 +1,7 @@
 #home-news {
-  padding: 80px;}
+  padding: 80px;
+font-family: "Microsoft YaHei","微软雅黑","黑体","Univers","sans-serif;";
+}
 
   #home-news .home-news__nav {
     margin: 46px 0;

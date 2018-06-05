@@ -18,6 +18,7 @@
 	border: 1px solid #006f68;
 	border-radius: 10px;
 	padding: 1px 10px 1px 10px;
+	font-family: "Microsoft YaHei","微软雅黑","黑体","Univers","sans-serif;"; 
 }
 .translate-menu a:hover {
 	font-weight:bold;
@@ -58,7 +59,7 @@
       font-size: 30px;
       color: #006f68; }
   #header .header__menus a {
-    font-family: "方正兰亭黑简体","Univers","sans-serif;"; }
+    font-family: "Microsoft YaHei","微软雅黑","黑体","Univers","sans-serif;"; }
   #header .header__menus .header-menus__ul > li {
     float: left;
 	  margin-left: 6px;

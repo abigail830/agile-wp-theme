@@ -4,6 +4,7 @@
 .description {
     width: 100%;
     padding: 100px 0;
+	font-family: "微软雅黑","Microsoft YaHei","方正兰亭黑简体"; 
 }
 .description .title{
 	text-align: center;
@@ -132,7 +133,7 @@
 #my-timeline .single-timeline p{
 	color: #606060;
 	margin:5px;
-	font-family: "方正兰亭黑简体";
+	font-family: "微软雅黑","Microsoft YaHei","方正兰亭黑简体";
 }
 #my-timeline .single-timeline h2 {
 
