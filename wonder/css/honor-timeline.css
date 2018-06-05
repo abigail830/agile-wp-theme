@@ -15,9 +15,13 @@
 .introduce {
 	text-align: left;
 	color: #8c8c8c;
-	padding: 0 120px;
-	line-height: 180%;
+	line-height: 190%;
+	text-indent:40px;
+	width: 70%;
+	margin: auto auto;
 }
+
+
 /*=======================
 	Timeline CSS
 =========================*/
