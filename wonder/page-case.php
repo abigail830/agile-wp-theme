@@ -6,7 +6,6 @@ $_terms = get_terms( array('case_archive') );
 foreach ($_terms as $term) :
 
 	$term_slug = $term->slug;
-	$paged = isset( $_GET[$term_slug] ) ? (int) $_GET[$term_slug] : 1;
 	$_posts= new WP_Query( array(
                 'post_type'         => 'case',
                 'posts_per_page'    => 1, //important for a PHP memory limit warning
@@ -16,8 +15,7 @@ foreach ($_terms as $term) :
                         'field'    => 'slug',
                         'terms'    => $term_slug,
                     ),
-                ),
-				'paged' => $paged,
+                ),				
             ));
 
 	if( $_posts->have_posts() && $term_slug != 'project-snapshot' ) : ?>
@@ -46,26 +44,11 @@ foreach ($_terms as $term) :
             </div>		
     		<?php endwhile;?>
 		</div>
-	
-	<div class="news-session__paging">
-	<?php
-    $total_pages = $_posts->max_num_pages;
-
-    if ($total_pages > 1){
-
-        echo paginate_links(array(
-            'format'  => "?$term_slug=%#%",
-            'current' => $paged,
-            'total' => $total_pages,
-            'prev_text'    => __('« prev'),
-            'next_text'    => __('next »'),
-        ));
-    }
-   endif; ?>
-<?php wp_reset_postdata();?>
-		</div>
-	</div>
-<?php	endforeach;
-?>
+						<div class="read_more">
+				<a href="<?php echo site_url();?>/medianews/?slug='<?php echo $term_slug ?>'">浏览更多公益项目内容</a>
+			</div>
+			</div>	
+   <?php endif; 
+	endforeach; ?>
 </div>
 <?php get_footer(); ?>

@@ -40,7 +40,7 @@
 <div id="home-news">
     <div class="home-news-wrapper page-container">
         <div class="center green">
-            <h2>新闻头条</h2>
+            <h2>新闻头条</h2>
         </div>
     </div>
     <div class="home-news__ul page-container">
@@ -90,7 +90,7 @@
 <div id="home-snapshot">
     <div class="home-snapshot-wrapper page-container">
         <div class="center green">
-            <h2>公益项目剪影</h2>
+            <h2>公益项目剪影</h2>
         </div>
         <div class="home-snapshot__group">
             <div class="swiper-container">
