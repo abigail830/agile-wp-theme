@@ -92,6 +92,7 @@
     display: inline-block;
 	width: 40%;
 	max-height:200px;
+	max-width:400px;
 	overflow:hidden;
 	top: 50%;
 }
