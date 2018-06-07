@@ -93,6 +93,7 @@
 	width: 40%;
 	max-height:200px;
 	max-width:400px;
+	min-width:300px;
 	overflow:hidden;
 	top: 50%;
 }
@@ -156,6 +157,9 @@
  @media only screen and (max-width: 900px) {
 	 .news-session .item__info p{
 		 display:none;
+	 }
+	 .news-session .item__image {
+		 max-width:350px;
 	 }
 
 }
