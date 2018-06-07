@@ -9,6 +9,9 @@ foreach ($_terms as $term) :
 	$_posts= new WP_Query( array(
                 'post_type'         => 'case',
                 'posts_per_page'    => 1, //important for a PHP memory limit warning
+		         'order' => 'DESC',
+				 'post_status' => 'publish',
+    			'orderby' => 'publish_date',
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'case_archive',

@@ -12,6 +12,8 @@
             $posts = new WP_Query(array(
                 'post_type' => 'case',
                 'order' => 'DESC',
+				'post_status' => 'publish',
+    			'orderby' => 'publish_date',
 				'tax_query' => array(
 					array(
 						'taxonomy' => 'case_archive',

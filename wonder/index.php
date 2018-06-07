@@ -9,6 +9,8 @@
                     'post_type' => 'banner',
                     'meta_key' => '_banner_position',
                     'orderby' => 'meta_value_num',
+					'post_status' => 'publish',
+    				'orderby' => 'publish_date',
                     'order' => 'DESC',
                     'posts_per_page' => -1
                 ));
@@ -48,14 +50,9 @@
             <?php
             $posts = get_posts(array(
                 'post_type' => 'news',
+				'post_status' => 'publish',
+    			'orderby' => 'publish_date',
                 'order' => 'DESC',
-				'tax_query' => array(
-					array(
-						'taxonomy' => 'news_archive',
-						'field'    => 'slug',
-						'terms'    => 'front-news',
-					),
-				 ),
                 'posts_per_page' => 3
             ));
             foreach ($posts as $post) { ?>
@@ -99,6 +96,8 @@
             $posts = get_posts(array(
                 'post_type' => 'case',
                 'order' => 'DESC',
+				'post_status' => 'publish',
+    			'orderby' => 'publish_date',
 				'tax_query' => array(
 					array(
 						'taxonomy' => 'case_archive',

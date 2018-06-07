@@ -7,13 +7,8 @@
                 $posts = get_posts(array(
                     'post_type' => 'news',
                     'order' => 'DESC',
-					'tax_query' => array(
-					array(
-						'taxonomy' => 'news_archive',
-						'field'    => 'slug',
-						'terms'    => 'front-news',
-					),
-				 ),
+					'post_status' => 'publish',
+    				'orderby' => 'publish_date',
                     'posts_per_page' => 1
                 ));
                 foreach ($posts as $post) { ?>
@@ -42,13 +37,8 @@
                 $posts = get_posts(array(
                     'post_type' => 'news',
                     'order' => 'DESC',
-					'tax_query' => array(
-					array(
-						'taxonomy' => 'news_archive',
-						'field'    => 'slug',
-						'terms'    => 'fundation-news',
-					),
-				 ),
+					'post_status' => 'publish',
+    				'orderby' => 'publish_date',
                     'posts_per_page' => 10
                 ));
                 foreach ($posts as $post) { ?>

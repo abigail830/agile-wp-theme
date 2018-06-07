@@ -11,13 +11,8 @@
             $posts = new WP_Query( array(
                 'post_type' => 'news',
                 'order' => 'DESC',
-				'tax_query' => array(
-					array(
-						'taxonomy' => 'news_archive',
-						'field'    => 'slug',
-						'terms'    => 'fundation-news',
-					),
-				 ),
+				'post_status' => 'publish',
+    			'orderby' => 'publish_date',
                 'posts_per_page' => 10,
 				'paged' => $paged,
             ));
