@@ -13,8 +13,9 @@
                 ));
                 foreach ($posts as $post) { ?>
                     <div class="news-session1__frontnews_item">
-                         <div class="item__image"
-                                 style="background-image: url('<?php echo get_the_post_thumbnail_url($post); ?>')"></div>
+                         <div class="item__image">
+                                 <img src="<?php echo get_the_post_thumbnail_url($post); ?>">
+						</div>
                           <div class="item__info">
                               <a href="<?php echo get_permalink($post); ?>">
 								  <h3><?php echo get_the_title(); ?></h3>
@@ -39,7 +40,7 @@
                     'order' => 'DESC',
 					'post_status' => 'publish',
     				'orderby' => 'publish_date',
-                    'posts_per_page' => 10
+                    'posts_per_page' => 10,
                 ));
                 foreach ($posts as $post) { ?>
                     <div class="news-session__item">

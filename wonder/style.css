@@ -90,12 +90,14 @@
 }
 .news-session .item__image {
     display: inline-block;
-	width: 40%;
-	max-height:200px;
-	max-width:400px;
-	min-width:300px;
-	overflow:hidden;
-	top: 50%;
+    width:38%;
+    max-height:180px;
+    overflow:hidden;
+}
+.news-session .item__image img{
+	object-fit: cover;
+	width:100%;
+	height:auto;
 }
 .news-session .item__info {
 	display:inline-block;;
