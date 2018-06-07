@@ -44,9 +44,8 @@
     float: right; }
   #header .header__logo img {
     display: block;
-    margin: -20px 8px 0px 8px;
-	padding-bottom: 10px;
-	height: 70px;
+    margin: -23px 10px 0px 6px;
+	height: 72px;
     width: auto; }
   #header .header__menus .min_menus {
     display: none;
@@ -67,7 +66,7 @@
     #header .header__menus .header-menus__ul > li > a {
       display: block;
       color: #606060;
-      font-size: 14px;
+      font-size: 15px;
       padding: 0 15px;
       height: 50px;
       line-height: 50px;
@@ -75,7 +74,7 @@
       text-decoration: none; }
     #header .header__menus .header-menus__ul > li:hover > a {
       color: #006f68;
-	  font-size:15px;
+	  font-size:16px;
 	  padding: 1 5px;}
     #header .header__menus .header-menus__ul > li:hover ul {
       opacity: 0.9;
@@ -103,7 +102,7 @@
     #header .header__menus .header-menus__ul ul > li > a {
       display: block;
       color: #333;
-      font-size: 13px;
+      font-size: 15px;
       font-weight: 700;
       padding: 0 15px;
       height: 43.3333333333px;
