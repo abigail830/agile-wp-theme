@@ -237,8 +237,11 @@ h2 {
 	font-weight:bold;
 }
 .read_more a:hover {
-        color: #fff;
-        background-color: #006f68; }
+	background-color: rgba(0, 111, 104, .6);
+	color: #fff;	
+	border: 2px solid rgba(0, 111, 104, .6);
+
+}
 p {
 	font-family: "Microsoft YaHei","微软雅黑","黑体","Univers","sans-serif;";
 }

@@ -44,7 +44,7 @@ foreach ($_terms as $term) :
 								  <h3><?php the_title(); ?></h3>
 					</a>							  
                     <p><?php echo get_post_meta($post->ID, '_case_desc', true); ?></p>
-				    <span><a href="<?php echo get_permalink($post); ?>">阅读更多 </a></span>
+				    <span><a href="<?php echo get_permalink($post); ?>">阅读详情 </a></span>
                 </div>
             </div>		
     		<?php endwhile;?>
