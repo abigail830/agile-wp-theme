@@ -1,11 +1,10 @@
 #home-banner {
-  height: 750px; 
-  margin-top:132px;
+  height: 700px; 
 }
 
 .home-banner-wrapper, .swiper-container {
-    height:100%;
-	}
+	height:100%;
+}
 .banner__slide{
 	 max-width: 100%; height: auto; 
 }
