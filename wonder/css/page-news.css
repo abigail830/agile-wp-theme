@@ -20,15 +20,16 @@
 }
 #page_news .news-session1 .news-session1__frontnews .item__image{
 	position: absolute;
-	background-position: center;
-	background-repeat: no-repeat;
-    background-size: contain;
     display: block;
 	width:52%;
     height: 280px;
 	overflow:hidden;
 	float: left;
 	margin-right: 10px;
+}
+#page_news .news-session1 .news-session1__frontnews .item__image a{
+	width:100%;
+	object-fit: cover;
 }
 #page_news .news-session1 .news-session1__frontnews .item__info{
 	width: 42%;
