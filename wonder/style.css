@@ -46,14 +46,14 @@
 
 .new-session__description {
 	width: 80%;
-	margin:20px auto;
+	margin:0px auto;
 	color:#fff;
 	background-color:rgba(0, 111, 104, .6);
 	font-size:13px;
 	text-indent:30px;	
 	line-height: 170%;
 	padding:50px 7%;
-	margin-bottom:0px;
+	padding-bottom: 10px;
 }
 .news-session {
 	position: relative;
@@ -154,6 +154,28 @@
 	border-radius: 10px;
 	color: #006f68;
 	
+}
+
+#page_case .read_more {
+	text-align: center; 
+	margin: 20px auto;
+}   
+#page_case .read_more a {
+      background: none;
+	  color:#fff;
+      border: 2px solid #fff;
+      line-height: 50px;
+      text-decoration: none;
+      padding: 10px 50px;
+		border-radius: 30px;
+      
+      transition: 0.3s all ease; }
+#page_case .read_more a b{
+	font-weight:bold;
+}
+#page_case .read_more a:hover {
+	background-color: #fff;
+	color: #006f68;	
 }
 
  @media only screen and (max-width: 900px) {

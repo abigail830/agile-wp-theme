@@ -31,7 +31,10 @@ foreach ($_terms as $term) :
 		<div class="new-session__description">
 			<p>
 				<?php echo term_description($term->term_id, 'case_archive') ?>
-			</p>	
+			</p>
+						<div class="read_more">
+				<a href="<?php echo site_url();?>/medianews/?slug='<?php echo $term_slug ?>'">浏览更多公益项目内容</a>
+			</div>
 		</div>
 		<div class="news-session__group clearfix">
 			<?php while($_posts->have_posts())  : $_posts->the_post(); ?> 
@@ -49,9 +52,7 @@ foreach ($_terms as $term) :
             </div>		
     		<?php endwhile;?>
 		</div>
-						<div class="read_more">
-				<a href="<?php echo site_url();?>/medianews/?slug='<?php echo $term_slug ?>'">浏览更多公益项目内容</a>
-			</div>
+						
 			</div>	
    <?php endif; 
 	endforeach; ?>
