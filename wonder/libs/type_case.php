@@ -63,6 +63,16 @@ function wonder_case_box()
             margin-top: 8px;
             font-size: 14px;
             line-height: 30px;
+            height: 32px;
+            width: 100%;
+            outline: 0;
+            background-color: #fff;
+        }
+	input[name="case_position"], input[name="case_link"], input[name="case_title"] {
+            padding: 3px 8px;
+            margin-top: 8px;
+            font-size: 14px;
+            line-height: 30px;
             height: 30px;
             width: 100%;
             outline: 0;
@@ -71,6 +81,15 @@ function wonder_case_box()
     </style>
     <table class="case">
         <tr>
+			 <td>
+                <label for="case_position">项目显示位置</label>
+                <input type="number" name="case_position" size="30" id="case_position"
+                       value="<?php echo get_post_meta(get_the_ID(), '_case_position', true); ?>" spellcheck="true"
+                       autocomplete="off"
+                       placeholder="数字越大,位置越靠前,建议不要设置连续数字以免中间插入不便,可设置为例如100,200,300...">
+            </td>
+		</tr>
+		<tr>
             <td>
                 <label for="case_desc">描述</label>
                 <input type="text" name="case_desc" size="30" id="case_desc"
@@ -88,6 +107,7 @@ function wonder_case_box()
 function wonder_case_save_postdata($post_id)
 {
     update_post_meta($post_id, '_case_desc', $_POST['case_desc']);
+	update_post_meta($post_id, '_case_position', $_POST['case_position']);
 }
 
 add_action('save_post_case', 'wonder_case_save_postdata');

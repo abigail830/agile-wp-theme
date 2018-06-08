@@ -7,7 +7,7 @@
     </div>
     <div class="home-news__ul page-container">
             <?php
-			$paged = isset( $_GET[$term->slug] ) ? (int) $_GET[$term->slug] : 1;
+			$paged=(get_query_var('paged'))?get_query_var('paged'):1;
             $posts = new WP_Query( array(
                 'post_type' => 'news',
                 'order' => 'DESC',
@@ -42,7 +42,7 @@
     if ($total_pages > 1){
 
         echo paginate_links(array(
-            'format'  => "?$term_slug=%#%",
+            'format'  => "?paged=%#%",
             'current' => $paged,
             'total' => $total_pages,
             'prev_text'    => __('« prev'),

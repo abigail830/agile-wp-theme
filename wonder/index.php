@@ -10,7 +10,6 @@
                     'meta_key' => '_banner_position',
                     'orderby' => 'meta_value_num',
 					'post_status' => 'publish',
-    				'orderby' => 'publish_date',
                     'order' => 'DESC',
                     'posts_per_page' => -1
                 ));

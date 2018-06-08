@@ -40,7 +40,7 @@
                     'order' => 'DESC',
 					'post_status' => 'publish',
     				'orderby' => 'publish_date',
-                    'posts_per_page' => 10,
+                    'posts_per_page' => 8,
                 ));
                 foreach ($posts as $post) { ?>
                     <div class="news-session__item">

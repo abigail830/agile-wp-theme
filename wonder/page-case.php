@@ -11,7 +11,9 @@ foreach ($_terms as $term) :
                 'posts_per_page'    => 1, //important for a PHP memory limit warning
 		         'order' => 'DESC',
 				 'post_status' => 'publish',
-    			'orderby' => 'publish_date',
+    			 'meta_key' => '_case_position',
+                 'orderby' => 'meta_value_num',
+                  'order' => 'DESC',
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'case_archive',

@@ -13,7 +13,8 @@
                 'post_type' => 'case',
                 'order' => 'DESC',
 				'post_status' => 'publish',
-    			'orderby' => 'publish_date',
+    			'meta_key' => '_case_position',
+                'orderby' => 'meta_value_num',
 				'tax_query' => array(
 					array(
 						'taxonomy' => 'case_archive',
