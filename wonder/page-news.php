@@ -40,7 +40,7 @@
                     'order' => 'DESC',
 					'post_status' => 'publish',
     				'orderby' => 'publish_date',
-                    'posts_per_page' => 8,
+                    'posts_per_page' => 9,
                 ));
                 foreach ($posts as $key => $post) { 
 				 if($key!=0) {?>
