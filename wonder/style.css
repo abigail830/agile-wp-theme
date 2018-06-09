@@ -134,6 +134,7 @@
 
 .news-session__paging {
 	text-align:center;
+	padding: 20px 0px;
 }
 .news-session__paging a{	
 	text-decoration: none;

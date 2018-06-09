@@ -24,7 +24,7 @@ foreach ($_terms as $term) :
             ));
 
 	if( $_posts->have_posts() && $term_slug != 'project-snapshot' ) : ?>
-		<div class="news-session">
+		<div class="news-session" id="<?php echo $term_slug; ?>">
 		<div class="news-session__title">
 			<h2><?php echo $term->name ?></h2>
 		</div>
