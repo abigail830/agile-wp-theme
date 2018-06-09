@@ -2,7 +2,9 @@
   padding: 80px;
 font-family: "Microsoft YaHei","微软雅黑","黑体","Univers","sans-serif;";
 }
-
+#home-news .home-news-wrapper{
+	padding-bottom: 50px;
+}
   #home-news .home-news__nav {
     margin: 46px 0;
     margin-bottom: 12px; }
