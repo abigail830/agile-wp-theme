@@ -51,27 +51,5 @@ add_action('admin_menu', 'remove_options');
  * @return mixed|string
  */
 function wonder_get_timeago( $ptime ) {
-    $ptime = strtotime($ptime);
-    $etime = time() - $ptime;
-    if($etime < 1) return '不久前';
-    $interval = array (
-        12 * 30 * 24 * 60 * 60  =>  date('Y-m-d', $ptime),
-        30 * 24 * 60 * 60       =>  date('m-d', $ptime),
-        7 * 24 * 60 * 60        =>  date('m-d', $ptime),
-        24 * 60 * 60            =>  '天前',
-        60 * 60                 =>  '小时前',
-        60                      =>  '分钟前',
-        1                       =>  '秒前'
-    );
-    foreach ($interval as $secs => $str) {
-        $d = $etime / $secs;
-        if ($d >= 1) {
-            $r = round($d);
-            if($str != '不久前' && $str != '天前' && $str != '小时前' && $str != '分钟前' && $str != '秒前'){
-                return $str;
-            }else{
-                return $r . $str;
-            }
-        }
-    };
+	return $ptime;
 }

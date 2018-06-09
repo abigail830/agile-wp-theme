@@ -160,3 +160,11 @@
 	End Timeline
 =========================*/ 
 
+.vedio{
+	width: 100%;
+}
+.vedio img {
+	width: 100%;
+	height:auto;
+}
+
