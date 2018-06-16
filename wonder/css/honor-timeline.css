@@ -3,7 +3,7 @@
 =========================*/
 .description {
     width: 100%;
-    padding: 100px 0;
+    padding: 150px 0;
 	font-family: "微软雅黑","Microsoft YaHei","方正兰亭黑简体"; 
 }
 .description .title{
@@ -17,7 +17,7 @@
 	text-align: left;
 	color: #8c8c8c;
 	line-height: 190%;
-	text-indent:40px;
+	text-indent:32px;
 	width: 70%;
 	margin: auto auto;
 }

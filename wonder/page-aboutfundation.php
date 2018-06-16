@@ -5,7 +5,7 @@
         <div class="vedio">
             <img src="<?php bloginfo('template_url'); ?>/resources/images/fundationbanner.jpg" alt="" class="pic">
         </div>
-        <div class="description center white-background">
+        <div class="description center white-background" id="fundation_intro">
 			<div class="title">
 				基金会简介
 			</div>
@@ -16,6 +16,7 @@
 			</p>
 			</div>
         </div>
+
 
 	<div class="timeline_session" id="my-timeline">
         <h2>基金会荣誉</h2>

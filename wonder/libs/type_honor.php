@@ -16,7 +16,7 @@ function wonder_honors_create_post_type()
         'map_meta_cap' => true,
     ));
 
-    add_theme_support('post-thumbnails', array('honors'));
+    //add_theme_support('post-thumbnails', array('honors'));
 
 }
 

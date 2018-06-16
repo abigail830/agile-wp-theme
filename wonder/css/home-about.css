@@ -55,23 +55,4 @@
       transition: all ease 0.3s; }
       #home-about .info_contnet a:hover {
         text-decoration: underline; }
-  #home-about .info_img img {
-    display: block;
-    margin: 10px;
-    width: 120px;
-    height: 120px;
-    float: left; }
-  #home-about .info_img:after {
-    content: '';
-    display: block;
-    height: 0;
-    visibility: hidden;
-    clear: both; }
-  @media only screen and (max-width: 800px) {
-    #home-about .about__content {
-      position: relative;
-      width: 100%;
-      height: auto; }
-      #home-about .about__content h3 {
-        margin-top: 0; } }
 

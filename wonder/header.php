@@ -19,6 +19,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="format-detection" content="telephone=no"/>
     <meta name="format-detection" content="email=no"/>
+    <meta name="google-site-verification" content="axVlpkTHEk7ZZDqTg0u93jjPR3wq5S1MSPvGSn03IQU" />
     <meta name="renderer" content="webkit">
 	<title><?php is_front_page() ? '': wp_title('-', true, 'right'); ?><?php bloginfo('name'); ?> </title>
 
@@ -40,7 +41,6 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-news.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-publicreport.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-breakdown.css" type="text/css" media="all" />
-	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/page-voluteer.css" type="text/css" media="all" />
 	
     <?php wp_head(); ?>
 </head>
@@ -64,7 +64,7 @@
         <div class="header__menus">
             <div class="min_menus">
                 <a href="javascript:;" class="menus_active_btn">
-                    <i class="iconfont icon-menus"></i>
+                   <i class="fa fa-bars" aria-hidden="true"></i>
                 </a>
             </div>
             <ul class="header-menus__ul">

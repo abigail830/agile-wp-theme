@@ -16,12 +16,18 @@
     font-weight: 700;
     line-height: 1.4;
 	padding-top: 100px;
+    text-align:center;
+}
+#single .title-container .info{
+    text-align: center;
 }
   #single .title-container .info span {
     margin-right: 18px;
     color: #9b9b9b;
     font-size: 12px;
-    font-weight: 400; }
+    font-weight: 400; 
+    text-align: center;
+}
 #single .post-content {
   word-wrap: break-word;
   max-width: 100%;

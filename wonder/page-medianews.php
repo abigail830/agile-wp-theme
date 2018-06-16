@@ -1,32 +1,32 @@
 <?php get_header(); ?>
 <div id="home-news">
-    <div class="home-news-wrapper page-container">
-        <div class="center green">
-            <h2>公益项目汇总</h2>
-        </div>
-    </div>
-    <div class="home-news__ul page-container">
-            <?php
-		    $term_slug = isset( $_GET['slug'] ) ? $_GET['slug'] : 'project-snapshot';
-			$paged = isset( $_GET[$term->slug] ) ? (int) $_GET[$term->slug] : 1;
+           <?php
+                    $term_slug = isset( $_GET['slug'] ) ? $_GET['slug'] : 'project-snapshot';
+            $paged=(get_query_var('paged'))?get_query_var('paged'):1;
             $posts = new WP_Query(array(
                 'post_type' => 'case',
                 'order' => 'DESC',
-				'post_status' => 'publish',
-    			'meta_key' => '_case_position',
+                'post_status' => 'publish',
+                'meta_key' => '_case_position',
                 'orderby' => 'meta_value_num',
-				'tax_query' => array(
-					array(
-						'taxonomy' => 'case_archive',
-						'field'    => 'slug',
-						'terms'    => $term_slug,
-					),
-				 ),
+                'tax_query' => array(
+                     array(
+                         'taxonomy' => 'case_archive',
+                         'field'    => 'slug',
+                         'terms'    => $term_slug,
+                     ),
+                 ),
                 'posts_per_page' => 8,
-				'paged' => $paged,
+                'paged' => $paged,
             ));
-		if( $posts->have_posts()): ?>
-		    <ul>
+  if( $posts->have_posts()): ?>
+    <div class="home-news-wrapper page-container">
+        <div class="center green">
+            <h2><?php $term = get_term_by('slug', $term_slug, 'case_archive'); echo $term->name; ?></h2>
+        </div>
+    </div>
+    <div class="home-news__ul page-container">
+	 <ul>
             <?php while($posts->have_posts())  : $posts->the_post(); ?>
             <li>
                 <div class="home-news__item">
@@ -51,7 +51,7 @@
     if ($total_pages > 1){
 
         echo paginate_links(array(
-            'format'  => "?$term_slug=%#%",
+            'format'  => "?paged=%#%",
             'current' => $paged,
             'total' => $total_pages,
             'prev_text'    => __('« prev'),

@@ -27,8 +27,8 @@
 
 .news-session__title {
     text-align: center;
-    padding-top: 50px;
-	margin-bottom: 40px;
+    padding-top: 30px;
+	margin-bottom: 50px;
 }
 .news-session__title  a{
     text-decoration: none;
@@ -100,7 +100,7 @@
 }
 .news-session .item__info {
 	display:inline-block;;
-	width: 53%;
+	width: 58%;
     text-align: right;
 	padding-left: 10px;
 }

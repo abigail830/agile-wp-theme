@@ -1,7 +1,9 @@
 <?php get_header(); ?>
 <div id="page_case">
 <?php 
-$_terms = get_terms( array('case_archive') );
+$_terms = get_terms('case_archive', array(
+    'orderby' => 'slug'
+) );
 
 foreach ($_terms as $term) :
 

@@ -1,11 +1,16 @@
 #home-slogon{
 	height: 500px;
+        width: 100%;
 }
 #home-slogon .home-slogon__background{
 	background-image:url("../resources/images/frontbanner.jpg");
-	height:100%;
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
 }
 #home-slogon .home-slogon__background h2 {
 	padding-top:200px;
+opacity: 0.8;
 }
 
